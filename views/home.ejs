@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Online Voting Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-grey h-full w-full">
+    <div class="flex justify-center text-green-900">
+      <%- include ('header') %>
+    </div>
+    <div class="flex flex-col justify-center items-center p-4">
+      <div class="flex flex-col justify-center md:w-2/5 w-full">
+        <p class="font-semi-bold text-xl pt-4">
+          This is a online voting platform which allows to host elections and see
+          their results. You can also add your specific voters for each corresponding
+          election, add custom questions with options and so on.
+        </p><br/><br/>
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col justify-center items-center md:w-2/5 w-full"
+          >
+            <div
+              class="flex flex-col justify-center pt-4 items-center pt-8 w-full"
+            >
+              <b>Have an account?</b>
+              <a
+                class="bg-orange-200 border-2 border-black flex justify-center hover:bg-purple-200 p-1 w-60"
+                href="/login"
+                >Log In</a
+              >
+            </div>
+            <div class="flex flex-col justify-center pt-4 items-center w-full">
+              <b>New here?</b>
+              <a
+                class="bg-orange-200 border-2 flex justify-center border-black hover:bg-purple-200 p-1 w-60"
+                href="/signup"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
